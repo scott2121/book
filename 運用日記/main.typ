@@ -1,6 +1,6 @@
 #set document(
-  title: "同人誌タイトル",
-  author: "著者名",
+  title: "土曜投資信託運用レポート",
+  author: "永積 輝, 鳥海 渓, 謝 シケツ",
 )
 
 #set page(
@@ -32,15 +32,19 @@
 
 // 表紙
 #align(center + horizon)[
-  #text(size: 24pt, weight: "bold")[同人誌タイトル]
+  #text(size: 24pt, weight: "bold")[土曜投資信託運用レポート]
 
   #v(2em)
 
-  #text(size: 14pt)[著者名]
+  #text(size: 14pt)[
+    永積 輝 \
+    鳥海 渓 \
+    謝 シケツ
+  ]
 
   #v(1em)
 
-  #text(size: 12pt)[2026年 夏コミ]
+  #text(size: 12pt)[since 2026/02/25]
 ]
 
 #pagebreak()
@@ -61,8 +65,7 @@
 #include "strategy.typ"
 
 // 週次レポート（新しい週を上、過去週を下に並べる）
-#include "week2.typ"
-#include "week1.typ"
+#include "generated_weeks.typ"
 
 = おわりに
 
